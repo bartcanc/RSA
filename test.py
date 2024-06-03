@@ -1,7 +1,5 @@
 import cv2
 import numpy as np
-from Crypto.PublicKey import RSA
-import os
 
 # -------------------------------------------------------------- random bits generating
 def calculateColor(px):
