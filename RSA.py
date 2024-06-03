@@ -24,7 +24,7 @@ key = RSA.generate(2048, e=65537, randfunc=random_from_file)
 private = key.export_key()
 public = key.public_key().export_key()
 
-with open('private.pem', 'wb') as pv:
+with open('nadawca/private.pem', 'wb') as pv:
     pv.write(private)
-with open('public.pem', 'wb') as pub:
+with open('odbiorca/public.pem', 'wb') as pub:
     pub.write(public)
