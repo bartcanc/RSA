@@ -1,5 +1,9 @@
 import os
-def main(filename='testfolder/hej'):
+import functions.error as err
+def main(filename):
+    if(filename == 'none'):
+        err.main('none')
+        return
     if os.path.exists("nadawca/private.key"):
         os.remove("nadawca/private.key")
     if os.path.exists("odbiorca/public.key"):

@@ -7,6 +7,8 @@ import functions.clear as clear
 import functions.RSA as RSA
 import functions.file_select as select
 
+filename='none'
+
 layout = [
     [sg.Text("Co chcesz zrobić?")],
     [sg.Button('Generowanie kluczy RSA')],

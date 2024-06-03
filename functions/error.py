@@ -11,6 +11,11 @@ def main(message):
             [sg.Text("Najpierw zaszyfruj plik!")],
             [sg.Button('Wróć')]
         ]
+    elif message == 'none':
+        layout = [
+            [sg.Text("Brak plików do usunięcia.")],
+            [sg.Button('Wróć')]
+        ]
 
     window = sg.Window('ERROR', layout)
 
