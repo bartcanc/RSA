@@ -25,10 +25,10 @@ while True:
     if event == sg.WIN_CLOSED:
         break
     if event == 'Generowanie kluczy RSA':
-        RSA.main(select.main())
+        RSA.main(select.main(event))
     if event == 'Szyfrowanie pliku':
         if os.path.exists("nadawca/private.key"):
-            filename = sz.main(select.main())
+            filename = sz.main(select.main(event))
         else:
             error.main('code')
     if event == 'Odszyfrowanie pliku':
